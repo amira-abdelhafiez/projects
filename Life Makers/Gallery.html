@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+<title>Gallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="webpage , life-makers gallery">
+<meta name="description" content= "start page view description for the site and its content">
+
+
+<style type="text/css">
+body {
+    background: url("img.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+h1{
+    font-family:'comic sans ms';
+    font-style:italic;
+    font-size:30pt;
+    color:#98AFC7;
+    text-align:left;
+    position: absolute;
+    left:70px;
+    top:-20px;
+}
+h2{
+    font-family:'comic sans ms';
+    font-style:italic;
+    font-size:14pt;
+    color:#FEFCFF;
+    text-align:left;
+    position: absolute;
+    left:100px;
+    top:35px;
+}
+#img{
+    text-align:left;
+    opacity:0.4;
+    position: absolute;
+    left:60px;
+    bottom:50px;
+}
+#img1{
+    position:absolute;
+    left:20px;
+    top:15px;
+}
+pre{
+    font-family:'comic sans ms';
+    font-style:normal;
+    font-size:12pt;
+    color:black;
+    text-align:left;
+    position: absolute;
+    left:60px;
+    bottom:80px;
+}
+p{
+    font-family:'comic sans ms';
+    font-weight:bold;
+    font-size:14pt;
+    color:black;
+    position: absolute;
+    top:540px;
+    left:1000px;
+}
+
+
+.p1{
+    font-family:'comic sans ms';
+    font-size:11pt;
+    color:white;
+    position:absolute;
+    top:230px;
+    right:10px;
+}
+
+ul#menu {
+    padding: 0;
+    text-align:right;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    opacity: 0.8;
+    font-family:'comic sans ms';
+    font-style:normal;
+    color:white;
+    font-size:10pt;
+}
+
+ul#menu li a:hover {
+    background-color: grey;
+}
+
+#img1{
+    position: relative;
+    top:50px;
+    left: 20px;
+}
+#next{
+    background-color:black;
+    font-family:'comic sans ms';
+    opacity: 0.8;
+    border-radius: 6px 6px 0 0;
+    color:white;
+    position: relative;
+    padding: 10px 20px;
+    position: absolute;
+    top: 230px;
+    right: 250px;
+}
+#back{
+    background-color:black;
+    font-family:'comic sans ms';
+    opacity: 0.8;
+    border-radius: 6px 6px 0 0;
+    color:white;
+    position: relative;
+    padding: 9px 10px;
+    position: absolute;
+    top: 280px;
+    right: 250px;
+}
+
+
+</style>
+</head>
+<body>
+<ul id="menu">
+ <li><a href="file:Life_Makers_Home.html" style="text-decoration: none">Home</a></li>
+ <li><a href="file:About%20us.html">About us</a></li>
+ <li><a href="file:Projects.html">Projects</a></li>
+ <li><a href="file:Agenda.html">Agenda</a></li>
+ <li><a href="file:Donation.html">Donate</a></li>
+ <li><a href="file:Contact_Us.html">Contact us</a></li>
+<li><a href="file:Gallery.html">Gallery</a></li>
+</ul> 
+<img id= "img1" src="file:Pic0.jpg">
+<input type="button" button id="next" value="Next >>" onclick="change()">
+<input type="button" button id="back" value="<< Previous" onclick="bchange()">
+<script type="text/javascript">
+var x=0;
+var n=0;
+function change(){
+    var img = document.getElementById("img1");
+    img.src="Pic"+x+".jpg";
+    x=x+1;
+    n=x-1;
+}
+function bchange(){
+    var img = document.getElementById("img1");
+    img.src="Pic"+n+".jpg";
+    x=n+1;
+    n=n-1;
+}
+</script>
+</body>
+</html>
